@@ -1,0 +1,39 @@
+body
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.outer_div { 
+    width: 350px; 
+    height: 3px; 
+    background-color:#535c68; 
+    margin-top: 350px;
+} 
+
+.inner_div { 
+    width: 5px; 
+    height: 3px; 
+    position: relative; top: 0px; left: 0px; 
+    background-color: #dff9fb; 
+    /* box-shadow: inset 0px 0px 30px #6CC47D;  */
+    -webkit-animation-name: progressBar; 
+    -webkit-animation-duration: 5s; 
+    -webkit-animation-fill-mode: forwards; 
+} 
+
+#percent_count { 
+    font: normal 1em calibri; 
+    position: relative; 
+    left: 10px; 
+} 
+
+@-webkit-keyframes progressBar { 
+    from { 
+     width: 5px; 
+    } 
+    to { 
+     width: 349px; 
+    } 
+} 
