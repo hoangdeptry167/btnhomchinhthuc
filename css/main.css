@@ -1,23 +1,43 @@
+
+
 *{
     margin: 0px;
     padding: 0px;
 }
-header.modau {
-    height: 754px;
-    overflow: hidden;
+
+
+.tongquatphan1{
     position: relative;
-    width: 100%;
+    height: 805px;
+    width: 1536px;
+    overflow: hidden;
+}
+header.modau {
+    height: 854px;
+    overflow: hidden;
+    position: absolute;
+    width: 1536px;
+    transform: translateX(0px) scale(1);
+    transition: 0.4s;
 }
 
-/* .nau {
+.momo {
     background-color: #5e5959;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 0px;
     left: 0px;
-    height: 754px;
+    height: 805px;
     width: 100%;
-} */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+
+}
+.momo.momoxuathien {
+    opacity: 0.3;
+    visibility: visible;
+}
 
 img.hinhnen {
     position: absolute;
@@ -31,9 +51,11 @@ img.hinhnen {
 @-webkit-keyframes dautien{
     0%{
         opacity: 0;
+        visibility: hidden;
     }
     100%{
         opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -64,10 +86,10 @@ img.hinhnen {
 }
 
 .chuyendong1{
-    border-bottom: 754px solid #185a86;
+    border-bottom: 805px solid #185a86;
     border-left: 0px solid transparent;
     border-right: 460px solid transparent;
-    height: 100px;
+    height: 1000px;
     width: 220px;
     position: absolute;
     z-index: 4;
@@ -91,7 +113,7 @@ img.hinhnen {
   }
 
 .chuyendong2{
-    border-bottom: 754px solid #185a86;
+    border-bottom: 805px solid #185a86;
     border-left: 0px solid transparent;
     border-right: 500px solid transparent;
     height: 100px;
@@ -209,6 +231,7 @@ img.hinhnen {
     animation: thu4 0.8s forwards;
     animation-delay: 2.8s;
     opacity: 0;
+    transition: ease-in-out 0.4s;
 }
 
 .nut_1:hover{
@@ -216,17 +239,92 @@ img.hinhnen {
    color: black;
 }
 
-.menu{
-    height: 60px;
-    width: 60%;
+.nutbammenu{
+    position: sticky;
+    top: 5%;
+    left: 3%;
+    z-index: 9;
+    width: 45px;
+    height: 45px;
+    border: solid 2px white;
+    cursor: pointer;
+    opacity: 0.7;
+    border-radius: 7px;
+    transition: ease-in-out 0.3s;
+    animation: dautien 1s forwards;
+    animation-delay: 3.4s;
+    visibility: hidden;
+    margin-top:  -100px;
+}
+
+.nutbammenu:hover{
+    background-color: white;
+    border-color: rgb(50, 30, 163);
+    opacity: 1;
+}
+
+.soc1, .soc2, .soc3{
+    width: 30px;
+    height: 2px;
+    background-color: white;
     position: absolute;
     z-index: 9;
-    top: 7%;
-    left: 22%;
-    background-color: white;
-    border-radius: 10px ;
+    top: 11px;
+    left: 8px;
+}
+.soc2{
+    height: 3px;
+    top:20px;
+    left: 8px;
+}
+.soc3{
+    top: 30px;
+    left: 8px;
+}
+.nutbammenu:hover .soc1{
+    background-color: #185a86;
+}
+.nutbammenu:hover .soc2{
+    background-color: #185a86;
+}
+.nutbammenu:hover .soc3{
+    background-color: #185a86;
+}
+.menu{
+    position: fixed;
+    height: 754px;
+    width: 261px;
+    background-color: #185a86;
+    z-index: 10;
+    visibility: hidden;
     transition: 0.4s;
-    opacity: 0;
-    animation: dautien 1s forwards;
-    animation-delay: 3.2s;
+    transform: translateX(-260px);
+    top:0;
+    left: 0;
+    opacity: 0.99;
+    border-right: solid 1px white;
+}
+.menu.daymenura{
+    transition: 0.4s;
+    visibility: visible;
+    transform: translateX(0px);
+}
+.modau.daytheomenu{
+    transform: translateX(260px);
+    transition: 0.4s;
+}
+
+.tongquatphan2{
+
+    position: relative;
+    height: 754px;
+    width: 1536px;
+    overflow: hidden;
+}
+.tongquatphan3{
+
+    position: relative;
+    height: 754px;
+    width: 1536px;
+    overflow: hidden;
 }
