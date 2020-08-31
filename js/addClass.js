@@ -2,16 +2,30 @@ $(function(){
     // add class vao ham 
     $('.nutbammenu').click(function (event) { 
         //code addClass day menu ra
-        $('.menu').addClass('daymenura');
+        $('.menu').toggleClass('daymenura');
 
-        $('.modau').addClass('daytheomenu')
+        $('.modau').toggleClass('daytheomenu');
 
-        $('.momo').addClass('momoxuathien');
+        $('.momo').toggleClass('momoxuathien');
+
+        $('.div3').toggleClass('daytheomenu');
     });
 
 
     $('.menu').click(function(event){
         $('.menu').removeClass('daymenura');
+
+        $('.modau').removeClass('daytheomenu');
+
+        $('.momo').removeClass('momoxuathien');
+
+        $('.div3').removeClass('daytheomenu');
+    })
+
+    $('.div3').click(function(event){
+        $('.menu').removeClass('daymenura');
+
+        $('.div3').removeClass('daytheomenu');
 
         $('.modau').removeClass('daytheomenu');
 
@@ -26,9 +40,11 @@ $(function(){
 
     $('.momo').click(function (event) {
         $('.momo').removeClass('momoxuathien');
+        
+        $('.div3').removeClass('daytheomenu');
     })    
     // hieu ứng scroll
-    $('.nut_1').click(function(event) {
+    $('.menu2').click(function(event) {
         $('html,body').animate({scrollTop: 754},1400);
 
         $('.menu').addClass('daymenura');

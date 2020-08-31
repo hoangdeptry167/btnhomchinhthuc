@@ -1,22 +1,22 @@
 
-
 *{
     margin: 0px;
     padding: 0px;
 }
 
-
-.tongquatphan1{
+.tongquat{
     position: relative;
-    height: 805px;
-    width: 1536px;
+    height: 808px;
+    width: 100%;
     overflow: hidden;
+    background: lightblue;
 }
+
 header.modau {
     height: 854px;
     overflow: hidden;
     position: absolute;
-    width: 1536px;
+    width: 100%;
     transform: translateX(0px) scale(1);
     transition: 0.4s;
 }
@@ -62,7 +62,7 @@ img.hinhnen {
 .Churatlon {
     position: absolute;
     z-index: 3;
-    top: 15%;
+    top: 28%;
     text-align: center;
     width: 100%;
     font-size: 140px;
@@ -86,11 +86,11 @@ img.hinhnen {
 }
 
 .chuyendong1{
-    border-bottom: 805px solid #185a86;
+    border-bottom: 905px solid #185a86;
     border-left: 0px solid transparent;
-    border-right: 460px solid transparent;
+    border-right: 550px solid transparent;
     height: 1000px;
-    width: 220px;
+    width: 670px;
     position: absolute;
     z-index: 4;
     bottom: 0px;
@@ -113,11 +113,11 @@ img.hinhnen {
   }
 
 .chuyendong2{
-    border-bottom: 805px solid #185a86;
+    border-bottom: 1005px solid #185a86;
     border-left: 0px solid transparent;
-    border-right: 500px solid transparent;
+    border-right: 650px solid transparent;
     height: 100px;
-    width: 440px;
+    width: 930px;
     position: absolute;
     z-index: 4;
     bottom: 0px;
@@ -248,7 +248,7 @@ img.hinhnen {
     height: 45px;
     border: solid 2px white;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.5;
     border-radius: 7px;
     transition: ease-in-out 0.3s;
     animation: dautien 1s forwards;
@@ -272,15 +272,18 @@ img.hinhnen {
     top: 11px;
     left: 8px;
 }
+
 .soc2{
     height: 3px;
     top:20px;
     left: 8px;
 }
+
 .soc3{
     top: 30px;
     left: 8px;
 }
+
 .nutbammenu:hover .soc1{
     background-color: #185a86;
 }
@@ -313,18 +316,12 @@ img.hinhnen {
     transform: translateX(260px);
     transition: 0.4s;
 }
-
-.tongquatphan2{
-
-    position: relative;
-    height: 754px;
-    width: 1536px;
-    overflow: hidden;
+/* Sửa đổi bootstrap */
+.btn-group-vertical{
+    height: 350px;
+    width: 100%;
+    position: absolute;
 }
-.tongquatphan3{
-
-    position: relative;
-    height: 754px;
-    width: 1536px;
-    overflow: hidden;
+.btn.btn-outline-light{
+    border-width: 0px;
 }
