@@ -9,7 +9,7 @@
     height: 808px;
     width: 100%;
     overflow: hidden;
-    background: lightblue;
+    transition: ease-in-out 1.5s;
 }
 
 header.modau {
@@ -295,7 +295,7 @@ img.hinhnen {
 }
 .menu{
     position: fixed;
-    height: 754px;
+    height: 100%;
     width: 261px;
     background-color: #185a86;
     z-index: 10;
@@ -324,4 +324,40 @@ img.hinhnen {
 }
 .btn.btn-outline-light{
     border-width: 0px;
+}
+
+/* phần tìm hiểu chung */
+.tongquat3{
+    position: relative;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #b2bec3;
+    transition: ease-in-out 1.5s;
+}
+.hinhnendiv2{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    background-size: cover;
+    height: 850px;
+    width: 750px;
+}
+.timhieuchung{
+    z-index: 1;
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Bungee', cursive;
+    margin: auto;
+}
+
+.tongquat.bienmat{
+    height: 0px;
+}
+
+.tongquat3.xuathientongquat3{
+    height: 808px;
 }

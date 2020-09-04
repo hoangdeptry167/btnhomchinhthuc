@@ -42,11 +42,25 @@ $(function(){
         $('.momo').removeClass('momoxuathien');
         
         $('.div3').removeClass('daytheomenu');
-    })    
+    })
     // hieu ứng scroll
     $('.menu2').click(function(event) {
-        $('html,body').animate({scrollTop: 754},1400);
+        // $('html,body').animate({scrollTop: 754},1400);
 
         $('.menu').addClass('daymenura');
+
+        $('.tongquat').addClass('bienmat');
+
+        $('.tongquat3').addClass('xuathientongquat3');
+     });
+
+     $('.menu1').click(function(event) {
+        // $('html,body').animate({scrollTop: 0},1400);
+
+        $('.tongquat').removeClass('bienmat');
+
+        $('.menu').addClass('daymenura');
+
+        $('.tongquat3').removeClass('xuathientongquat3');
      });
 })
