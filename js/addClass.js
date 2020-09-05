@@ -1,3 +1,4 @@
+
 $(function(){
     // add class vao ham 
     $('.nutbammenu').click(function (event) { 
@@ -45,7 +46,7 @@ $(function(){
     })
     // hieu ứng scroll
     $('.menu2').click(function(event) {
-        // $('html,body').animate({scrollTop: 754},1400);
+        $('html,body').animate({scrollTop: 1},1400);
 
         $('.menu').addClass('daymenura');
 
@@ -55,7 +56,7 @@ $(function(){
      });
 
      $('.menu1').click(function(event) {
-        // $('html,body').animate({scrollTop: 0},1400);
+        $('html,body').animate({scrollTop: 0},1400);
 
         $('.tongquat').removeClass('bienmat');
 
@@ -63,4 +64,9 @@ $(function(){
 
         $('.tongquat3').removeClass('xuathientongquat3');
      });
+     $('.menu3').click(function(event){
+         $('html,body').animate({scrollTop:1200},1400,"easeInOutCubic");
+     })
 })
+
+

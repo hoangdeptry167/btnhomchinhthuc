@@ -3,13 +3,18 @@
     margin: 0px;
     padding: 0px;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+::-webkit-scrollbar { 
+    width: 0px; 
+}
 .tongquat{
     position: relative;
-    height: 808px;
+    height: 810px;
     width: 100%;
     overflow: hidden;
-    transition: ease-in-out 1.5s;
+    transition: ease-in-out 1.3s;
 }
 
 header.modau {
@@ -326,38 +331,120 @@ img.hinhnen {
     border-width: 0px;
 }
 
+/* Phần danh lam thắng cảnh */
+
+.tongquat2{
+    position: relative;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    background: lightblue;
+    transition: ease-in-out 1.3s;
+}
+
+
 /* phần tìm hiểu chung */
 .tongquat3{
     position: relative;
     height: 0px;
     width: 100%;
     overflow: hidden;
-    background-color: #b2bec3;
-    transition: ease-in-out 1.5s;
+    background-color: #171717;
+    transition: ease-in-out 1.3s;
 }
 .hinhnendiv2{
     position: absolute;
-    top: 150px;
-    left: 50px;
+    top: 100px;
+    margin-left: 750px;
     background-size: cover;
-    height: 850px;
-    width: 750px;
+    height: 900px;
+    width: 770px;
+    z-index: 1;
 }
 .timhieuchung{
     z-index: 1;
     position: absolute;
-    top: 450px;
-    left: 150px;
+    top: 330px;
+    left: -150px;
     color: white;
-    font-size: 80px;
+    font-size: 85px;
     font-family: 'Bungee', cursive;
+    animation-iteration-count: infinite;
+    
+}
+.span1{
+    margin-left: 10px;
+}
+/* vẽ hình tròn mũi tên */
+.hinhtrongmuiten{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    top:600px;
+    left: 550px;
+    z-index: 10;
+    cursor: pointer;
+}
+.hinhtron{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: solid 1px white;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    --border-radius: 150px;
+    border-radius: 150px;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+.muiten{
+    position: absolute;
+    top: 140px;
+    left:140px;
     margin: auto;
+    z-index: 4;
+    color: white;
+    font-size: 30px;
 }
 
+/* đổi màu menu */
+.menu.doimaumenu{
+    background-color: #171717;
+}
+
+/* Thay đổi chiều cao của các div tổng */
 .tongquat.bienmat{
     height: 0px;
 }
 
+
+/* Thay đổi hiệu ứng của hinhtronmuiten */
+
+
 .tongquat3.xuathientongquat3{
-    height: 808px;
+    height: 1311px;
+}
+.tongquat2.xuathientongquat2{
+    height: 811px;
+}
+/* Nội dung tìm hiểu chung thẻ span */
+.span2, .span3, .span4{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+
+}
+.noidungtimhieuchung2, .noidungtimhieuchung3, .noidungtimhieuchung4{
+    position: absolute;
+    top: 600px;
+    left: -130px;
+}
+.noidungtimhieuchung3{
+    top: 700px;
+}
+.noidungtimhieuchung4{
+    top: 800px;
+
 }

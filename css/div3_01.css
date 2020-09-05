@@ -3,16 +3,8 @@
 	padding: 0;
 }
 
-.tongquat2{
-    position: relative;
-    height: 2000px;
-    width: 100%;
-    overflow: hidden;
-    background: lightblue;
-}
-
 .div3{
-    background-color: lightblue;
+    background-color: #171717;
     transition: 0.4s;
     transform: translateX(0px);
     height: 2000px;
