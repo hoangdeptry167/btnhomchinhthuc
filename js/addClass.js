@@ -65,7 +65,7 @@ $(function(){
         $('.tongquat3').removeClass('xuathientongquat3');
      });
      $('.menu3').click(function(event){
-         $('html,body').animate({scrollTop:1200},1400,"easeInOutCubic");
+         $('html,body').animate({scrollTop:1200},1400,"easeInOutSine");
      })
 })
 

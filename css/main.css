@@ -342,6 +342,9 @@ img.hinhnen {
     transition: ease-in-out 1.3s;
 }
 
+.span5{
+    color: white;
+}
 
 /* phần tìm hiểu chung */
 .tongquat3{
@@ -381,10 +384,11 @@ img.hinhnen {
     height: 400px;
     width: 400px;
     overflow: hidden;
-    top:600px;
+    top:700px;
     left: 550px;
     z-index: 10;
     cursor: pointer;
+    transition: ease-in 0.4s;
 }
 .hinhtron{
     position: absolute;
@@ -421,7 +425,13 @@ img.hinhnen {
 
 
 /* Thay đổi hiệu ứng của hinhtronmuiten */
+.hinhtrongmuiten.dichlen{
+    top: 670px;
+}
 
+.hinhtrongmuiten.dichxuong{
+    top:800px;
+}
 
 .tongquat3.xuathientongquat3{
     height: 1311px;
@@ -429,7 +439,7 @@ img.hinhnen {
 .tongquat2.xuathientongquat2{
     height: 811px;
 }
-/* Nội dung tìm hiểu chung thẻ span */
+/* Nội dung tìm hiểu chung thẻ span2,3,4 */
 .span2, .span3, .span4{
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -448,3 +458,4 @@ img.hinhnen {
     top: 800px;
 
 }
+

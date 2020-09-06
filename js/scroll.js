@@ -14,7 +14,6 @@ $(function(){
 
             $('.menu').addClass('doimaumenu');
 
-            $('.hinhtronmuiten').addClass('dichlen');
 
         }
         if(vitribody == 0){
@@ -22,6 +21,14 @@ $(function(){
             $('.tongquat3').removeClass('xuathientongquat3');
             $('.tongquat2').removeClass('xuathientongquat2');
             $('.menu').removeClass('doimaumenu');
+        }
+        if(vitribody > 0 && vitribody < 300)
+        {
+            $('.hinhtrongmuiten').addClass('dichlen');
+            $('.hinhtrongmuiten').removeClass('dichxuong');
+        }
+        else{
+            $('.hinhtrongmuiten').addClass('dichxuong');
         }
     })
 })
